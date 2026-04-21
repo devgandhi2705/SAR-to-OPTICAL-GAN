@@ -1,0 +1,39 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Dataset images
+v_2/
+
+# Node dependencies
+Frontend/node_modules/
+Frontend/package-lock.json
+
+# Frontend build output
+Frontend/dist/
+Frontend/build/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Model checkpoints (exclude all .pth except pix2pix_gen_265.pth)
+*.pth
+!pix2pix_gen_265.pth
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

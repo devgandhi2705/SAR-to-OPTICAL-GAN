@@ -1050,9 +1050,14 @@
   .arrow-body { display: block; }
   .arrow-label { display: none; }
 
-  .step-connector { width: 100%; height: 2px; margin: -2px 0; }
-  .steps-row { flex-direction: column; align-items: stretch; }
-  .step-card { padding: 1.5rem; }
+  .steps-row { flex-direction: column; align-items: stretch; gap: 0; }
+  .step-card { padding: 1.5rem; max-width: 100%; }
+  .step-connector {
+    width: 2px;
+    height: 36px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(0, 212, 255, 0.4), rgba(181, 55, 242, 0.4));
+  }
 
   .curves-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
@@ -1084,6 +1089,16 @@
   .about-card h3 { font-size: 1.1rem; }
 
   .arch-card { padding: 1.5rem; }
+  .arch-flow {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: visible;
+    gap: 0.25rem;
+    padding-bottom: 0;
+  }
+  .arch-arrow-sym { transform: rotate(90deg); }
+  .arch-node { white-space: normal; min-width: 130px; max-width: 170px; }
+  .skip-label { font-size: 0.62rem; }
 
   .dataset-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
   .dataset-card { padding: 1.25rem; }

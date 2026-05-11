@@ -9,10 +9,6 @@ license: mit
 app_port: 7860
 ---
 
-# SAR to Optical Image Translation — Pix2Pix GAN
-
-[![HuggingFace Space](https://img.shields.io/badge/🤗-Live%20Demo-blue)](https://huggingface.co/spaces/devgandhi2705/SAR-to-OPTICAL-GAN)
-[![GitHub](https://img.shields.io/badge/GitHub-devgandhi2705-black?logo=github)](https://github.com/devgandhi2705/SAR-to-OPTICAL-GAN)
 
 A full-stack deep learning application that translates grayscale **Synthetic Aperture Radar (SAR)** images into colorized **optical-style** imagery using a **Pix2Pix Generative Adversarial Network**. Includes a React landing page, interactive demo, and a Flask REST API backend — all containerized for HuggingFace Spaces.
 
@@ -21,6 +17,8 @@ A full-stack deep learning application that translates grayscale **Synthetic Ape
 ## Live Demo
 
 🚀 **[Try it on HuggingFace Spaces →](https://huggingface.co/spaces/devgandhi2705/SAR-to-OPTICAL-GAN)**
+
+🌐 **[Deployed app →](https://devg-01-sar-to-optical-gan.hf.space/)**
 
 ---
 

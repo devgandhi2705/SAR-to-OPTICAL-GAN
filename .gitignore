@@ -9,7 +9,6 @@ v_2/
 
 # Node dependencies
 Frontend/node_modules/
-Frontend/package-lock.json
 
 # Frontend build output
 Frontend/dist/

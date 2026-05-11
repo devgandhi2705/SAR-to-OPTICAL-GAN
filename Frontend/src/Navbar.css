@@ -1,0 +1,99 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  background: rgba(10, 14, 39, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.15);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.nav-logo-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.nav-logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--neon-blue);
+  background: rgba(0, 212, 255, 0.06);
+}
+
+.nav-demo-link {
+  color: var(--neon-blue);
+  border-color: rgba(0, 212, 255, 0.35);
+  font-weight: 700;
+}
+
+.nav-demo-link:hover,
+.nav-demo-link.active {
+  background: rgba(0, 212, 255, 0.12);
+  border-color: var(--neon-blue);
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.2);
+  color: var(--neon-blue);
+}
+
+.nav-github-link {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.85rem;
+}
+
+.nav-github-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 600px) {
+  .navbar { padding: 0.9rem 1.2rem; }
+  .nav-logo-text { font-size: 0.95rem; letter-spacing: 2px; }
+  .nav-links { gap: 0.3rem; }
+  .nav-link { font-size: 0.78rem; padding: 0.35rem 0.6rem; }
+  .nav-github-link { display: none; }
+}
+
+@media (max-width: 380px) {
+  .navbar { padding: 0.75rem 0.9rem; }
+  .nav-logo-icon { font-size: 1.4rem; }
+  .nav-logo-text { font-size: 0.82rem; letter-spacing: 1px; }
+  .nav-link { font-size: 0.72rem; padding: 0.3rem 0.5rem; }
+  .nav-demo-link { font-size: 0.72rem; padding: 0.3rem 0.55rem; }
+}
